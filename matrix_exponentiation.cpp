@@ -39,9 +39,7 @@ vector<vector<ll>> multiply(vector<vector<ll>> a, vector<vector<ll>> b){
 }
 
 void solve() {
-	cin >> X >> MOD;
-	if(X == 1) return void (cout << "1\n");
-	X--; 
+	
 	while(X){
 		if(X & 1) ans = multiply(ans, S);
 		S = multiply(S, S);
@@ -55,6 +53,6 @@ int main() {
     ios::sync_with_stdio(0), cin.tie(0);
     // freopen("max-pair.in", "r", stdin)
 	int T = 1;
-    //cin >> T;
+    cin >> T;
 	while (T--) solve(); 
 }
