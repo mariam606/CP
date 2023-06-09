@@ -11,23 +11,6 @@ ll mul(ll x, ll y){
 	return (x * 1LL * y) % MOD;
 }
 
-vector<vector<ll>> ans = 
-{
-	{1, 0},
-	{0, 1}
-};
-
-vector<vector<ll>> col = {
-	{1},
-	{1}
-};
-
-vector<vector<ll>> S = 
-{
-	{1, 1},
-	{0, 1}
-};
-
 vector<vector<ll>> multiply(vector<vector<ll>> a, vector<vector<ll>> b){
 	int x = a.size(), z = a[0].size(), y = b[0].size();
 	vector<vector<ll>> c(x, vector<ll>(y));
@@ -39,7 +22,22 @@ vector<vector<ll>> multiply(vector<vector<ll>> a, vector<vector<ll>> b){
 }
 
 void solve() {
-	
+	vector<vector<ll>> ans = 
+	{
+		{1, 0},
+		{0, 1}
+	};
+
+	vector<vector<ll>> col = {
+		{1},
+		{1}
+	};
+
+	vector<vector<ll>> S = 
+	{
+		{1, 1},
+		{0, 1}
+	};
 	while(X){
 		if(X & 1) ans = multiply(ans, S);
 		S = multiply(S, S);
