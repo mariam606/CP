@@ -1,8 +1,6 @@
 //Sparse tables: are used to answer the RMQ on a range in O(1). Please call build sparse and then enter your quesries.
 #include <bits/stdc++.h>
 #define ll long long
-#pragma GCC optimize("O3,unroll-loops")
-#pragma GCC target("avx2,bmi,bmi2,lzcnt,popcnt")
 using namespace std;
 
 const int N = 1e5 + 5, LOG = 20;
