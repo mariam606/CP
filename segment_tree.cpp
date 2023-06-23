@@ -18,7 +18,7 @@ void build(int ni = 0, int ns = 0, int ne = n - 1){
     tree[ni] = min(tree[l], tree[r]);
 }
 
-void update(int idx,int val,int ni = 0,int ns = 0,int ne = n-1)
+void update(int idx, int val, int ni = 0, int ns = 0, int ne = n - 1)
 {
     if(idx < ns or idx > ne) return;
     if(ns == ne)
