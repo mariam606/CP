@@ -3,7 +3,7 @@
 #define ll long long
 using namespace std;
 
-const int N = 1 << 18; //2e5
+const int N = 4 * (1e5 + 5);
 int a[N], tree[N];
 int n, q;
 
@@ -43,7 +43,8 @@ int query(int qs, int qe, int ni = 0, int ns = 0, int ne = n - 1){
 }
 
 void solve() {
-    
+    //take the input
+    build();
 }
  
 int main() {
