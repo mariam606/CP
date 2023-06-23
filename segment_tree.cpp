@@ -3,8 +3,8 @@
 #define ll long long
 using namespace std;
 
-const int N = 4 * (1e5 + 5);
-int a[N], tree[N];
+const int N = 5e5 + 5;
+int a[N], tree[N << 2];
 int n, q;
 
 void build(int ni = 0, int ns = 0, int ne = n - 1){
