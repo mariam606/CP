@@ -1,5 +1,5 @@
-// DSU on trees: this code is used to implement euler tour algorithm on a tree and convert it into an array (the vertex array). The inarient that the vertex array depends
-// is the tin because every vertex has a unique tin. After that you can update a property (e.g. most frequent element) about a subtree on log using the below dfs. 
+// DSU on trees: this code is used to implement euler tour algorithm on a tree and convert it into an array (the vertex array). The vertex array depends
+// on the tin o each vertex because it's unique. After that, you can update a property (e.g. most frequent element) about a subtree on log using the below dfs. 
 #include <bits/stdc++.h>
 #define ll long long
 using namespace std;
