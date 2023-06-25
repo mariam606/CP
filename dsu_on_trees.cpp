@@ -8,7 +8,7 @@ int n, q, timer;
 const int N = 1e5 + 5;
 vector<int> g[N];
 int a[N], tin[N], tout[N], sz[N], vertex[N], p[N], depth[N];
-vector<vector<int>> query_idx;
+//save the index of the queries because they will not be processed in order
 
 void add(int v) {
 
