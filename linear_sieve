@@ -34,12 +34,18 @@ void linear_sieve() {
     }
 }
 
-// f[n] = sum {i = 1}^{n} n/gcd(i, n)
+vector<int> prime_factorization(int x)
+{
+    vector<int> ret;
+    while (x != 1) {
+        ret.push_back(spf[x]);
+        x = x / spf[x];
+    }
+    return ret;
+}
 
 void solve() {
-    int n;
-	cin >> n;
-	cout << f[n] << "\n";
+
 }
 
 int main() {
