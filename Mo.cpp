@@ -23,7 +23,7 @@ bool cmp(int x, int y){
 }
 
 void solve() {
-	
+	//take the input
 	query.resize(q); l.resize(q); r.resize(q); p.resize(q);
 	iota(p.begin(), p.end(), 0);
 	for(int i = 0; i < q; ++i){
