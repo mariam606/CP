@@ -11,11 +11,11 @@ int a[N], tin[N], tout[N], sz[N], vertex[N];
 ll ans[N];
 int timer;
  
-void add(int propery){ 
+void add(int property){ 
 
 }
  
-void erase(int propery){
+void erase(int property){
 
 }
  
