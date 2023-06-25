@@ -7,7 +7,7 @@ using namespace std;
 int n, q, timer;
 const int N = 1e5 + 5;
 vector<int> g[N];
-int a[N], tin[N], tout[N], sz[N], vertex[N], p[N], depth[N];
+int a[N], tin[N], tout[N], sz[N], vertex[N], p[N], depth[N], ans[N];
 //save the index of the queries because they will not be processed in order
 
 void add(int v) {
@@ -59,6 +59,7 @@ void solve() {
 	//take input
 	pre(1);
 	dfs(1, 0);
+	for(int i = 0; i < q; ++i) cout << ans[i] << "\n";
 }
  
 int main() {
