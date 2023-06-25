@@ -3,17 +3,15 @@
 #define ll long long
 using namespace std;
  
-const int N = 2e5 + 5, SQ = 450;
 int n, q;
-vector<ll> a;
-vector<ll> query;
-vector<ll> l, r, p;
+const int N = 2e5 + 5, SQ = 450;
+vector<int> a, query, l, r, p;
 
-ll add(int idx){
+int add(int idx){
 
 }
 
-ll erase(int idx){
+int erase(int idx){
 
 }
 
@@ -33,7 +31,7 @@ void solve() {
 	}
 
 	sort(p.begin(), p.end(), cmp);
-	ll ans = 0LL, L = 0, R = -1;
+	int ans = 0, L = 0, R = -1;
 	for(int i = 0; i < q; ++i){
 		int j = p[i];
 		while(R < r[j]) ans += add(++R);
