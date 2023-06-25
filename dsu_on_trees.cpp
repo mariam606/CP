@@ -55,7 +55,8 @@ bool is_ancestor(int u, int v) {
 }
  
 void solve() {
-    timer = 0;
+	timer = 0;
+	//take input
 	pre(1);
 	dfs(1, 0);
 }
