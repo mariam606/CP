@@ -4,7 +4,7 @@
 using namespace std;
 
 const int N = 1e5 + 5;
-int BIT[N], n;
+int BIT[N], a[N], n;
 
 void update(int x, int val){
     while(x <= n){  
@@ -24,7 +24,10 @@ int query(int x) {
 
 void solve() {
     cin >> n;
-    for(int i = 1; i <= n; ++i) update(i, a[i]);
+    for(int i = 1; i <= n; ++i){
+        cin >> a[i];
+        update(i, a[i]);
+    }
     
 }
  
