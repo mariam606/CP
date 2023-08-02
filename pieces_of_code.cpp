@@ -14,3 +14,6 @@ for (int msk = s; msk; msk = (msk - 1) & s)
 
 //LCM
 int get_lcm(int x, int y) { return (x / __gcd(x, y)) * y; }
+
+//Number of subrectangles in a rectangle n * m
+n * (n + 1) * m * (m + 1) / 4
