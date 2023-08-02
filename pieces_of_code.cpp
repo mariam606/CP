@@ -9,6 +9,6 @@ auto get_id = [&](int x) {
 };
 
 //looping over the submasks of the mask s
-for (int msk = s; msk; msk =(msk - 1) & s)
+for (int msk = s; msk; msk = (msk - 1) & s)
     ..use the msk
 
