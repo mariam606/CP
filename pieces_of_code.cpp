@@ -13,4 +13,4 @@ for (int msk = s; msk; msk = (msk - 1) & s)
     ..use the msk
 
 //LCM
-int lcm(int x, int y) { return (x / __gcd(x, y)) * y; }
+int get_lcm(int x, int y) { return (x / __gcd(x, y)) * y; }
