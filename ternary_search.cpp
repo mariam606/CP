@@ -2,7 +2,7 @@
 #define ll long long
 using namespace std;
  
-int ternary_search(int l, int r, int k, int n, int i, vector<int> vals) {
+int ternary_search(int l, int r) {
     while (r - l > 4) {
         int m1 = (l+r) / 2;
         int m2 = (l+r) / 2 + 1;
