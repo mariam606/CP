@@ -4,8 +4,8 @@ using namespace std;
  
 int ternary_search(int l, int r) {
     while (r - l > 4) {
-        int m1 = (l+r) / 2;
-        int m2 = (l+r) / 2 + 1;
+        int m1 = (l + r) / 2;
+        int m2 = (l + r) / 2 + 1;
         int f1 = f(m1);      //evaluates the function at m1
         int f2 = f(m2);      //evaluates the function at m2
         if (f1 > f2)
