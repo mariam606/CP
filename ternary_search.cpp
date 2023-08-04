@@ -1,6 +1,24 @@
 #include <bits/stdc++.h>
 #define ll long long
 using namespace std;
+ 
+int ternary_search(int l, int r, int k, int n, int i, vector<int> vals) {
+    while (r - l > 4) {
+        int m1 = (l+r) / 2;
+        int m2 = (l+r) / 2 + 1;
+        int f1 = f(m1);      //evaluates the function at m1
+        int f2 = f(m2);      //evaluates the function at m2
+        if (f1 > f2)
+            l = m1;
+        else
+            r = m2;
+    }
+    int min_cost = INT_MAX;
+    for (int s = l; s <= r; s++) {
+        min_cost = min(min_cost, f(s));
+    }
+    return min_cost;                    //return the maximum of f(x) in [l, r]
+}
 
 double ternary_search(double l, double r) {
     double eps = 1e-9;              //set the error limit here
