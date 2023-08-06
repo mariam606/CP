@@ -1,3 +1,4 @@
+// You can get the hash value of a substring of s in O(1) using the hash_value() function. Preprocessing in O(n) using hash_string()
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
