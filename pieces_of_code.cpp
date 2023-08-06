@@ -24,4 +24,14 @@ int rand(int a, int b) { return uniform_int_distribution<int>(a, b)(rng); }
 
 //pi
 double pi = acos(-1);
- 
+
+// Sum of XOR of all possible subsets
+int n;
+vector<int> a;
+int xor_sum() {
+    int bits = 0;
+    for (int i=0; i < n; ++i)
+        bits |= arr[i];
+    int ans = bits * pow(2, n-1);
+    return ans;
+}
