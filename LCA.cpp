@@ -1,5 +1,5 @@
 //The dfs functoin implements binary lifting. up[u][k] returns the (2^k) ancesstor of the node u
-// get_LCA gets the least common ancesstor of the nodes u and v
+// get_LCA gets the least common ancesstor of the nodes u and v in O(log(N))
 #include <bits/stdc++.h>
 #define ll long long
 #pragma GCC optimize("O3,unroll-loops")
