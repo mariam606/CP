@@ -10,6 +10,7 @@ void possible_sums(){
   bitset<N> sums(1);
   for (auto i: a)
     sums |= sums << i;
+  //sums[i] = 1 means that i is a possible subset sum
 }
 
 void solve() {
