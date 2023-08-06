@@ -1,4 +1,4 @@
-//1-based, input the array through updates
+//1-based, input the array through updates, update O(log(n)), query O(log(n))
 #include <bits/stdc++.h>
 #define ll long long
 using namespace std;
