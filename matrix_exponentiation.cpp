@@ -1,3 +1,5 @@
+// When you need to do DP with high constraints. complexity O(log(n)) * (k ^ 3)
+// (x + y)^3 = (x^3) + 3 (x^2) y + 3 (y^2) x + (y^3)   
 #include <bits/stdc++.h>
 #define ll long long
 using namespace std;
