@@ -1,4 +1,4 @@
-//Sparse tables: are used to answer the RMQ on a range in O(1). Please call build sparse and then enter your quesries.
+//Sparse tables: are used to answer the RMQ on a range in O(1). Please call build sparse and then enter your queries. No updates!
 #include <bits/stdc++.h>
 #define ll long long
 using namespace std;
