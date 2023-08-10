@@ -1,4 +1,4 @@
-//Bitset can be used to solve the subset problem. It can same all the possible subset sums of an array in O(s * n / 64) where s is the max sum and n is the size of the array. 
+//Bitset can be used to solve the subset problem. It can sعة all the possible subset sums of an array in O(s * n / 64) where s is the max sum and n is the size of the array. 
 #include <bits/stdc++.h>
 #define ll long long
 using namespace std;
