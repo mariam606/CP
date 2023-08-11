@@ -13,9 +13,10 @@ void build_sparse(){
         mx[i][0] = a[i], mn[i][0] = a[i];
 
     for(int j = 1; j < LOG; ++j)
-        for(int i = 0; i + (1 << j) - 1 < n; ++i)
+        for(int i = 0; i + (1 << j) - 1 < n; ++i) {
             mx[i][j] = max(mx[i][j - 1], mx[i + (1 << (j - 1))][j - 1]),
             mn[i][j] = min(mn[i][j - 1], mn[i + (1 << (j - 1))][j - 1]);
+        }
 }
 
 int query_mn(int l, int r){
