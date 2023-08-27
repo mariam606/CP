@@ -37,15 +37,7 @@ int query(int x) {
 }
  
 void solve() {
-	cin >> q;
-	add(0, 1);
-	for(int i = 0; i < q; ++i){
-	    char type; cin >> type;
-	    int x; cin >> x;
-	    if(type == '+') add(x, 1);
-	    else if(type == '-') add(x, -1);
-	    else cout << query(x) << " ";
-	}
+
 }
  
 int main() {
