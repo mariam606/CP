@@ -9,14 +9,13 @@ int nxt = 1, freq[N * 30];
  
 void add(int x, int t) { //t is the type of operation, 1 for add, -1 for remove
     int p = 1;
-    freq[p] += t;
     for (int i = 30; i >= 0; i--) {
         int d = ((x >> i) & 1);
         if (!trie[p][d]) {
             trie[p][d] = ++nxt;
         }
-        p = trie[p][d];
         freq[p] += t;
+	p = trie[p][d];
     }
 }
 
