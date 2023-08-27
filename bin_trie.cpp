@@ -5,7 +5,7 @@ using namespace std;
 int q;
 const int N = 2e5 + 5;
 int trie[N * 30][2]; //[number of words * length of the word][num of letters in the alphabet]
-int nxt = 1, freq[N * 30]; //You can make it freq[N * 30][2] to count the number of numbers that have my prefix and bit (0, 1) at this position
+int nxt = 1, freq[N * 30]; //You can use freq[trie[p][j]] to indicate the freq of the next or just freq[p]
  
 void add(int x, int t) { //t is the type of operation, 1 for add, -1 for remove
     int p = 1;
