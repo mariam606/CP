@@ -17,6 +17,7 @@ void add(int x, int t) { //t is the type of operation, 1 for add, -1 for remove
         freq[p] += t;
 	p = trie[p][d];
     }
+    freq[p] += t;
 }
 
 //Gets the max value x ^ y where y is pre-saved in the trie
