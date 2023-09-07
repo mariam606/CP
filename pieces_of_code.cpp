@@ -35,3 +35,6 @@ int xor_sum() {
     int ans = bits * pow(2, n-1);
     return ans;
 }
+
+// priority queue from small to large
+priority_queue <int, vector<int>, greater<int>> gq;
