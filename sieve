@@ -3,6 +3,7 @@ const int N = 1e5 + 5;
 vector<bool> is_prime;
 vector<int> num_div, sumdiv, big;
 vector<vector<int>> divs;
+vector<int> pfact[N];
 
 //O(N * loglog(N))
 void sieve(){
@@ -38,6 +39,12 @@ void sum_of_divisors(){
     for (int i = 1; i <= N; ++i)
      for (int j = i; j <= N; j += i)
       sumdiv[j] += i;
+}
+
+//O(N * log(N))
+void prime_factorization() {
+    for (int i = 2; i < N; i++) if (pfact[i].empty())
+        for (int j = i; j < N; j += i) pfact[j].push_back(i);
 }
 
 //O(N * log(N))
