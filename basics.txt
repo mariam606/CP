@@ -1,0 +1,1 @@
+- Dijkstra is to find the shortest path from a source node to all other nodes in a weighted, directed graph when all the weights are non-negative.
