@@ -5,7 +5,9 @@ using namespace std;
 
 int n, q;
 const int N = 1e5 + 5;
-int a[N], tree[4 * N];
+int a[N]; // a is 0-based
+int tree[4 * N];
+
 
 // ni is the node index in the segment tree. ns is the start range in the array a and ne is the end of range.
 void build (int ni = 0, int ns = 0, int ne = n - 1) {
