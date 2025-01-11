@@ -21,7 +21,7 @@ void build_sparse(){
 
 int query_mn(int l, int r){
     int len = r - l + 1;
-    int k = 31 - __builtin_clz(len);
+    int k = 31 - __builtin_clz(len); // __builtin_clz(n) counts the leading zeros in n.
     return min(mn[l][k], mn[r - (1 << k) + 1][k]);
 }
 
