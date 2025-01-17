@@ -1,4 +1,4 @@
-//Range offline queries in O(Q*sqrt(N)), Make sure that the querues are 0-based
+//Range offline queries in O(Q*sqrt(N)), Make sure that the queries are 0-based
 #include <bits/stdc++.h>
 #define ll long long
 using namespace std;
